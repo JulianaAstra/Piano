@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+* {
+    margin: 0 0;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 130px auto;
+    position: relative;
+}
+
+.keyboard {
+    width: 1210px;
+    height: 350px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+  }
+  
+  .white-keys {
+    width: 100%;
+    display: flex;
+  } 
+  
+  .key.white {
+    width: 80px;
+    height: 300px;
+    border-right: 3px solid rgba(0, 0, 0, 0.6);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+    border-top: 3px solid rgba(0, 0, 0, 0.6);
+    border-radius: 10px 10px;
+    transition: all 0.2s;
+  }
+  
+  .black-keys {
+    display: flex;
+    width: 543px; 
+    position: absolute;
+    top: 5px;
+    left: 69px;
+    justify-content: space-between;
+  }
+  .key.black {
+    width: 42px;
+    height: 175px;
+    background-color: #322d29;
+    border-radius: 10px 10px;
+    transition: all 0.2s;
+  }
+  
+  .key.black:nth-child(3),
+  .key.black:nth-child(7) {
+    visibility: hidden;
+  }
+  
+  .key.white:first-child {
+    border-left: 3px solid rgba(0, 0, 0, 0.6);
+  }
+  
+  .key.white:last-child {
+    border-right: none;
+  }
+  
+  .second-octave {
+    position: absolute;
+    top: 5px;
+    left: 586px;
+  }
+  
+  .black-keys.b-second {
+    top: 0px;
+    left: 63px;
+  }
+  
+  .key.white.last-key {
+    border-right: 3px solid rgba(0, 0, 0, 0.6);
+  }
+  
+  kbd {
+    position: relative;
+    top: 250px;
+    left: 40px;
+    text-transform: uppercase;
+    visibility: hidden;
+  }
+  
+  .black-case {
+    position: relative;
+    top: 130px;
+    left: 18px;
+    color: white;
+  }
+  
+  .key.white.playing {
+    outline: 2px solid #ffc600;
+    transform: scale(1.0);
+    background-color: rgba(240, 250, 61, 1);
+    box-shadow: 0 0 10px #ffc600;
+  }
+  
+  .key.black.playing {
+    transform: scale(1.0);
+    background-color: rgba(243, 184, 169, 1);
+    box-shadow: 0 0 10px #ffc600;
+  }
+
+  .title {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 90px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: 400;
+    font-size: 85px;
+  }
+
+  h1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -130px;
+    left: -110px;
+    z-index: -1;
+    background-image: url('/brush_watercolor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    opacity: 0.855;
+  }
+
+  .author {
+    width: 40px;
+    margin: 0 auto;
+  }
+
+  .git {
+    fill:#322d29;
+  } 
+
+  .git:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    fill:#1e0d39;
+  }
+
+  a.index {
+    text-decoration: none;
+    color:#322d29;
+  }
+
+  a.index:hover {
+    color:#1e0d39;
+  }
+
+  .title:hover {
+    transform: scale(1.05);
+    transition: 1s;
+  }
