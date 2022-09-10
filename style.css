@@ -132,7 +132,7 @@ body {
     top: -130px;
     left: -110px;
     z-index: -1;
-    background-image: url('/brush_watercolor.png');
+    background-image: url('brush_watercolor.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 600px;
